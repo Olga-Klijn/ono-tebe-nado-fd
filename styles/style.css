@@ -27,7 +27,6 @@ li {
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;   
     line-height: 22px;
     font-style: normal;
 }
@@ -39,7 +38,6 @@ address {
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;   
     line-height: 24px;
     font-style: normal;
 }
@@ -160,7 +158,7 @@ p .bet {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 40px;
-    line-height: 100%;    
+    line-height: 100%;
     text-transform: uppercase;
 }
 
@@ -183,13 +181,6 @@ p .bet {
     gap: 25px;
 }
 
-.card {
-    /*1100px - (2x25px gap) - (2x24px padding) */
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 334px;
-}
-
 .lots__card-list-item {
     display: flex;
     flex-direction: column;
@@ -201,6 +192,10 @@ p .bet {
     background-position: center;
     min-height: 596px;
     z-index: 1;
+    /*1100px - (2x25px gap) - (2x24px padding) */
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 334px;
 }
 
 .card::before {
@@ -295,7 +290,7 @@ p .bet {
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;    
+    line-height: 24px;
 }
 
 /*FOOTER*/
