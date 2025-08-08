@@ -13,21 +13,6 @@ li {
     z-index: 1;
 }
 
-/*HEADER*/
-.header {
-    padding: 87px 50px 93px 50px;
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    gap: 36px;
-}
-
-.logo-black {
-    width: 148px;
-    height: 105px;
-}
-
 .menu {
     font-family: Raleway, sans-serif;
     font-weight: 400;
@@ -45,6 +30,21 @@ address {
     font-size: 18px;
     line-height: 24px;
     font-style: normal;
+}
+
+/*HEADER*/
+.header {
+    padding: 87px 50px 93px 50px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 36px;
+}
+
+.logo-black {
+    width: 148px;
+    height: 105px;
 }
 
 .header__link_active {
@@ -66,8 +66,8 @@ address {
 }
 
 .header-address {
-    align-items: last baseline;
-    margin-right: 5px;
+    justify-self: end;
+    max-width: 240px;
 }
 
 /*COVER*/
@@ -84,8 +84,6 @@ address {
     padding: 165px 50px 60px 50px;
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
-    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,14 +92,14 @@ address {
 .cover__title {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 100px;
-    line-height: 1.15;
     letter-spacing: 30px;
     text-transform: uppercase;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 100px;
+    line-height: 1.15;
 }
 
 .aligned-text_center {
@@ -130,7 +128,7 @@ address {
     word-spacing: 18.5px;
 }
 
-p .bet {
+.bet {
     text-decoration: none;
     border: 1px white solid;
     padding: 10px 30px;
@@ -150,8 +148,6 @@ p .bet {
     text-transform: uppercase;
 }
 
-
-
 .title__lots {
     padding-left: 40px;
     padding-bottom: 27px;
@@ -159,17 +155,18 @@ p .bet {
 
 .lots__card-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
 .lots__card-list-item {
     position: relative;
-    flex: 1;
     list-style: none;
+    flex: 1 1 calc((100% - 50px) / 3);
+    max-width: calc((100% - 50px) / 3);
 }
 
 .card {
-    position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,8 +174,6 @@ p .bet {
 }
 
 .card_content {
-    position: absolute;
-    z-index: 2;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
@@ -270,12 +265,12 @@ p .bet {
 
 /*FOOTER*/
 .footer {
-    padding: 180px 50px 0;
+    padding: 180px 50px 82px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 150px;
-    min-height: 180px;
+
 }
 
 .menu-footer {
