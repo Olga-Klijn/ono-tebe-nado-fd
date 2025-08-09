@@ -33,6 +33,14 @@ address {
     font-style: normal;
 }
 
+.title {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
 /*HEADER*/
 .header {
     padding: 87px 50px 93px 50px;
@@ -141,14 +149,6 @@ address {
     padding: 187px 24px 0 24px;
 }
 
-.title {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 100%;
-    text-transform: uppercase;
-}
-
 .title__lots {
     padding-left: 40px;
     padding-bottom: 27px;
@@ -172,7 +172,9 @@ address {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 596px;
+    display: flex;
+    flex-direction: column;
+    min-height: 596px;
 }
 
 .card_content {
@@ -182,7 +184,7 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100%;
+    flex: 1 1 auto;
 }
 
 .card_type_film {
@@ -203,7 +205,7 @@ address {
     line-height: 1.2;
     text-transform: uppercase;
     text-decoration: underline;
-}
+    }
 
 .card__text {
     color: white;
