@@ -212,6 +212,9 @@ address {
     font-size: 20px;
     line-height: 1.2;
 }
+.card_link{
+    text-decoration: none;
+}
 
 /*ABOUT*/
 .lots__look-more-link {
